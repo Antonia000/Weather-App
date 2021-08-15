@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Weather Project</title>
+
+    <!--Style-->
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/fontawesome-free-5.15.3-web/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <div class="container">
+        <div class="row p-5">
+            <div class="col-6 p-3">
+                <h2>Weather Forecast</h2>
+                <form id="form">
+                    <label class="p-2">City:</label>
+                    <input type="text" class="form-control" id="city" placeholder="ex:London..." />
+                    <button type="submit" class="btn btn-outline-light mt-4">See weather</button>
+                </form>
+            </div>
+
+            <div class="col-6 p-3 output">
+                <span><i class="fa fa-solid fa-city fa-2x"></i></span><p class="mb-4" id="city-name"></p>
+                <span><i class="fa fa-solid fa-cloud-sun fa-2x"></i></span><p class="mb-4" id="city-weather"></p>
+                <span><i class="fa fa-solid fa-temperature-high fa-2x"></i></span><p class="mb-4" id="city-temp"></p>
+                <span><i class="fa fa-tint fa-2x"></i></span><p class="mb-4" id="city-humidity"></p>
+            </div>
+
+        </div>
+        
+        
+
+        
+    </div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script src="app.js"></script>
+</body>
+</html>
