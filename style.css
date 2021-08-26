@@ -1,19 +1,41 @@
 ﻿@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: #262626;
+    background-color: #e6f7ff;
 }
+
 .output {
-    text-align:center;
+    text-align: center;
     border-left: 2px solid #fff;
-    font-size:18px;
-    font-weight:600;
+    font-size: 18px;
+    font-weight: 600;
 }
 
 .container {
-    background-color: #29a3a3;
-    border-radius:10px;
-    margin-top:150px;
+    background-image: linear-gradient(rgb(153, 206, 255),rgba(153, 206, 255,.7)),url("clouds.jpg");
+    background-size: cover;
+    border-radius: 10px;
+    margin-top: 150px;
+    margin-bottom: 100px;
+    color: #fff;
+}
 
-    color:#fff;
+@media only screen and (max-width: 800px) {
+    .container {
+        width: 300px;
+        margin: auto;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    .output {
+        border-left: none;
+    }
+
+        .output i {
+            font-size: 25px;
+        }
 }

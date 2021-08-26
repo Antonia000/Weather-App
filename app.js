@@ -9,27 +9,21 @@ $(document).ready(function () {
         $(this).css("background-color", "#e6f7ff");
         $(this).css("color", "#006699");
     });
-
-    
-
-    
 })
 
 
 function performSearch(event) {
     event.preventDefault();
     let request;
-
-
-     request = $.ajax({
+    request = $.ajax({
         url: 'https://api.openweathermap.org/data/2.5/weather',
         type: "GET",
-        data:{
+        data: {
             q: $("#city").val(),
             appid: '117fc9dc1561d82e54c1ef65a336fb05',
-            units:'metric'
+            units: 'metric'
         }
-        
+
     })
 
     request.done(function (response) {
@@ -46,6 +40,5 @@ function formatSearch(jsonObj) {
     $("#city-name").text(cityName);
     $("#city-weather").text(cityWeather);
     $("#city-temp").text(cityTemp + " Celsius");
-    $("#city-humidity").text(cityHumidity+"% Humidity");
-
+    $("#city-humidity").text(cityHumidity + "% Humidity");
 }

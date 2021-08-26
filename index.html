@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <title>Weather Project</title>
-
+    <meta name="viewport" content="width=500, initial-scale=1">
     <!--Style-->
     <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="bootstrap-4.3.1-dist/fontawesome-free-5.15.3-web/css/all.min.css" />
@@ -14,27 +14,27 @@
 
     <div class="container">
         <div class="row p-5">
-            <div class="col-6 p-3">
-                <h2>Weather Forecast</h2>
+            <div class="col-6 p-3 mt-5">
+                <h2 class="mb-4"><b>Weather Forecast</b></h2>
                 <form id="form">
-                    <label class="p-2">City:</label>
+                    <h5><b>City:</b></h5>
                     <input type="text" class="form-control" id="city" placeholder="ex:London..." />
                     <button type="submit" class="btn btn-outline-light mt-4">See weather</button>
                 </form>
             </div>
 
-            <div class="col-6 p-3 output">
-                <span><i class="fa fa-solid fa-city fa-2x"></i></span><p class="mb-4" id="city-name"></p>
-                <span><i class="fa fa-solid fa-cloud-sun fa-2x"></i></span><p class="mb-4" id="city-weather"></p>
-                <span><i class="fa fa-solid fa-temperature-high fa-2x"></i></span><p class="mb-4" id="city-temp"></p>
-                <span><i class="fa fa-tint fa-2x"></i></span><p class="mb-4" id="city-humidity"></p>
+            <div class="col-6 p-3 mt-4 output">
+                <span><i class="fa fa-solid fa-city fa-2x"></i></span><p class="mb-5" id="city-name"></p>
+                <span><i class="fa fa-solid fa-cloud-sun fa-2x"></i></span><p class="mb-5" id="city-weather"></p>
+                <span><i class="fa fa-solid fa-temperature-high fa-2x"></i></span><p class="mb-5" id="city-temp"></p>
+                <span><i class="fa fa-tint fa-2x"></i></span><p class="mb-5" id="city-humidity"></p>
             </div>
 
         </div>
-        
-        
 
-        
+
+
+
     </div>
 
 
